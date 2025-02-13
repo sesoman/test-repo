@@ -1,0 +1,54 @@
+
+:where(.progressPage) .bottomBorder{
+    
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+:where(.progressPage) .mainContent{
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+:where(.progressPage) .blocks{
+    
+    padding: 2em;
+    height: 100%;
+}
+:where(.progressPage) #upperBlock{
+    height:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0;
+    padding-top: 1em;
+}
+:where(.progressPage) #lowerBlock{
+    height: 75%;
+    display: flex;
+    padding: 0em;
+    flex-direction: row;
+}
+
+:where(.progressPage) #overallProgress{
+    width: 80%;
+    height: 2em;
+    border-radius: 2em;
+    border:none;
+    color: #606163;
+    background-color: #ddd;
+    appearance: none;
+    overflow: hidden;
+}
+
+:where(.progressPage) progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 2em;
+    border:none;
+}
+
+:where(.progressPage) progress::-webkit-progress-value {
+    background: #606163;
+    border-radius: 2em;
+}

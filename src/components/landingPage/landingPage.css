@@ -1,0 +1,95 @@
+
+:where(.landingPage) .wrap{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+
+
+:where(.landingPage) .bottomBorder{
+    justify-content: right;
+    height: 20%;
+}
+
+:where(.landingPage) .informationBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-height: 10%;
+    
+    margin-bottom: 1em;
+}
+
+:where(.landingPage) div.serviceContainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 2em;
+    overflow-y: auto;
+    
+}
+
+:where(.landingPage) div.service1{
+    background: #DBDCDE;
+    border-radius: 2em;
+    padding: 1.5em;
+    margin: 0 auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    /*background-color: aquamarine;*/
+    
+}
+
+:where(.landingPage) .service-title{
+    width: 25%;
+}
+
+:where(.landingPage) .service-description{
+    width: 60%;
+    overflow-wrap: break-word;
+    flex-grow: 0.5;
+    /*border: 1px solid black;*/
+}
+
+:where(.landingPage) .selection-circle{
+
+    border-radius: 50%;
+    border-color: #606163;
+    border-width: 0.3em;
+    border-style:solid;
+    height: 2em;
+    width: 2em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+:where(.landingPage) .selection-circle .inner-circle{
+    display: none;
+    border-radius: 50%;
+    background-color: #606163;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+h1{
+    font-size: 1.5em;
+    margin:0;
+    color: #606163;
+}
+
+p{
+    margin: 0;
+    color: #606163;
+}

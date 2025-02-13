@@ -1,0 +1,21 @@
+:where(.visualisationPage) .mainContent{
+    flex-direction: column;
+    gap:1em;
+}
+
+:where(.visualisationPage) #buttonRow{
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+}
+:where(.visualisationPage) #visualisationBox{
+    height: 90%;
+}
+
+:where(.visualisationPage) #fade-button{
+    min-width: 17%;
+}

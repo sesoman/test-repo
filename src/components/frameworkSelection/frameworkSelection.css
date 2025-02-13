@@ -1,0 +1,94 @@
+:where(.frameworkSelection) .bottomBorder{
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+:where(.frameworkSelection) .mainContent{
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: space-around;
+}
+
+:where(.frameworkSelection) .containers{
+    background-color:#DBDCDE ;
+    border-radius: 2em;
+    padding: 2em;
+    height: 100%;
+}
+:where(.frameworkSelection) #containerLeft{
+    width: 30%;
+    height: 100%;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+}
+:where(.frameworkSelection) #containerRight{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+}
+:where(.frameworkSelection) .toggle-list{
+    display:flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 100%;
+    gap: 0.5em;
+    margin-left: 0.5em;
+}
+:where(.frameworkSelection) .toggle-list label{
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+:where(.frameworkSelection) .toggle-list input[type="radio"]{
+    display: none;
+}
+:where(.frameworkSelection) .toggle-list input[type="radio"] +span{
+    position:relative;
+    padding-left: 2em;
+    color: #606163;
+}
+
+:where(.frameworkSelection) .toggle-list input[type="radio"] + span::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1em;
+    height: 1em;
+    border: 2px solid #606163;
+    border-radius: 50%;
+}
+:where(.frameworkSelection) .toggle-list input[type="radio"]:checked + span::after {
+    content: '';
+    position: absolute;
+    left: 0.25em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.7em;
+    height: 0.7em;
+    background: #606163;
+    border-radius: 50%; 
+}
+:where(.frameworkSelection) .frameworkButton{
+    width: fit-content;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+:where(.frameworkSelection) #preview{
+    margin-top: 0.5em;
+    margin-left: 1em;
+    height: 75%;
+    width: fit-content;
+}
+
+:where(.frameworkSelection) h1{
+    font-size: 2.5em;
+    color: #606163;
+    
+}
